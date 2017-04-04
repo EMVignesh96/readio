@@ -41,6 +41,7 @@ public class Readio extends javax.swing.JFrame implements ActionListener {
         files = fileChooser.getSelectedFiles();
 
         setLayout(new BorderLayout());
+        this.setTitle("Readio");
         setSize(1080, 2160);
         setVisible(true);
         JPanel panel = new JPanel(new FlowLayout());
@@ -163,6 +164,7 @@ public class Readio extends javax.swing.JFrame implements ActionListener {
             try {
                 Recognizer recognizer = new Recognizer();
                 recognizer.recognize(files[position].getPath());
+                System.out.println(files[position].getPath());
                 Speaker.speak(files[position].getPath() + ".txt");
             } catch (IOException ex) {
                 Logger.getLogger(Readio.class.getName()).log(Level.SEVERE, null, ex);

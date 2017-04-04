@@ -1,4 +1,4 @@
-
+    
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 import com.sun.speech.freetts.audio.AudioPlayer;
@@ -19,7 +19,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author Vignesh
+ * @author vignesh
  */
 public class Speaker {
     public static final String VOICE_NAME = "kevin16";
